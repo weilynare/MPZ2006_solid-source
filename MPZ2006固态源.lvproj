@@ -19,6 +19,7 @@
 			<Item Name="读取参数表格文件样例.vi" Type="VI" URL="../子vi/读取参数表格文件样例.vi"/>
 			<Item Name="读文件.vi" Type="VI" URL="../子vi/读文件.vi"/>
 			<Item Name="读文件main.vi" Type="VI" URL="../子vi/读文件main.vi"/>
+			<Item Name="功率算法.vi" Type="VI" URL="../子vi/功率算法.vi"/>
 			<Item Name="写文件.vi" Type="VI" URL="../子vi/写文件.vi"/>
 			<Item Name="写文件1.vi" Type="VI" URL="../子vi/写文件1.vi"/>
 			<Item Name="写文件1解析.vi" Type="VI" URL="../子vi/写文件1解析.vi"/>
@@ -253,7 +254,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6B4512A0-B2E8-4858-A632-239F4E14D7E9}</Property>
-				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.build" Type="Int">10</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">MPZ2006固态源工厂调试程序.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../exe/MPZ2006固态源工厂调试程序.exe</Property>
