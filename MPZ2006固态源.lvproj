@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="15008000">
 	<Item Name="我的电脑" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -16,12 +17,15 @@
 			<Item Name="保存数据.vi" Type="VI" URL="../子vi/保存数据.vi"/>
 			<Item Name="参数簇转换字符串.vi" Type="VI" URL="../子vi/参数簇转换字符串.vi"/>
 			<Item Name="查询设备信息.vi" Type="VI" URL="../子vi/查询设备信息.vi"/>
+			<Item Name="导入模版文件.vi" Type="VI" URL="../子vi/导入模版文件.vi"/>
 			<Item Name="读标定功率检测值.vi" Type="VI" URL="../子vi/读标定功率检测值.vi"/>
 			<Item Name="读标定功率检测值解析.vi" Type="VI" URL="../子vi/读标定功率检测值解析.vi"/>
 			<Item Name="读取参数表格文件样例.vi" Type="VI" URL="../子vi/读取参数表格文件样例.vi"/>
 			<Item Name="读文件.vi" Type="VI" URL="../子vi/读文件.vi"/>
 			<Item Name="读文件main.vi" Type="VI" URL="../子vi/读文件main.vi"/>
 			<Item Name="功率算法.vi" Type="VI" URL="../子vi/功率算法.vi"/>
+			<Item Name="写标定功率检测值.vi" Type="VI" URL="../子vi/写标定功率检测值.vi"/>
+			<Item Name="写标定功率检测值解析.vi" Type="VI" URL="../子vi/写标定功率检测值解析.vi"/>
 			<Item Name="写文件.vi" Type="VI" URL="../子vi/写文件.vi"/>
 			<Item Name="写文件1.vi" Type="VI" URL="../子vi/写文件1.vi"/>
 			<Item Name="写文件1解析.vi" Type="VI" URL="../子vi/写文件1解析.vi"/>
@@ -29,6 +33,7 @@
 			<Item Name="写文件3.vi" Type="VI" URL="../子vi/写文件3.vi"/>
 			<Item Name="写文件3解析.vi" Type="VI" URL="../子vi/写文件3解析.vi"/>
 			<Item Name="写文件main.vi" Type="VI" URL="../子vi/写文件main.vi"/>
+			<Item Name="斜率与截距计算.vi" Type="VI" URL="../子vi/斜率与截距计算.vi"/>
 		</Item>
 		<Item Name="MPZ2006固态源.vi" Type="VI" URL="../MPZ2006固态源.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
@@ -38,6 +43,7 @@
 				<Item Name="String to 1D Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/String to 1D Array__ogtk.vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Built App File Layout.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Built App File Layout.vi"/>
@@ -83,6 +89,7 @@
 				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVPointDoubleTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointDoubleTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_Excel.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/Excel/NI_Excel.lvclass"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
@@ -141,8 +148,11 @@
 			</Item>
 			<Item Name="Serial - Settings.ctl" Type="VI" URL="/E/National Instruments/LabVIEW 2015/examples/Instrument IO/Serial/support/Serial - Settings.ctl"/>
 			<Item Name="查询设备信息解析.vi" Type="VI" URL="../子vi/查询设备信息解析.vi"/>
+			<Item Name="当前路径选择.vi" Type="VI" URL="../子vi/当前路径选择.vi"/>
 			<Item Name="读内部参数.vi" Type="VI" URL="../子vi/读内部参数.vi"/>
 			<Item Name="读内部参数解析.vi" Type="VI" URL="../子vi/读内部参数解析.vi"/>
+			<Item Name="计算直线的斜率与截距.vi" Type="VI" URL="../子vi/直线/VI/计算直线的斜率与截距.vi"/>
+			<Item Name="斜率与截距.ctl" Type="VI" URL="../子vi/直线/自定义类型/斜率与截距.ctl"/>
 			<Item Name="写内部参数.vi" Type="VI" URL="../子vi/写内部参数.vi"/>
 			<Item Name="写内部参数解析.vi" Type="VI" URL="../子vi/写内部参数解析.vi"/>
 			<Item Name="写文件2.vi" Type="VI" URL="../子vi/写文件2.vi"/>
