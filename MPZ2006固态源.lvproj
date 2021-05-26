@@ -39,6 +39,8 @@
 			<Item Name="保存功率控制表和标定参数表.vi" Type="VI" URL="../子vi/保存功率控制表和标定参数表.vi"/>
 			<Item Name="拷贝到预备区.vi" Type="VI" URL="../子vi/拷贝到预备区.vi"/>
 			<Item Name="功率电压图.vi" Type="VI" URL="../子vi/功率电压图.vi"/>
+			<Item Name="读文件解析.vi" Type="VI" URL="../子vi/读文件解析.vi"/>
+			<Item Name="log.vi" Type="VI" URL="../子vi/log.vi"/>
 		</Item>
 		<Item Name="MPZ2006固态源.vi" Type="VI" URL="../MPZ2006固态源.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
@@ -281,7 +283,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6B4512A0-B2E8-4858-A632-239F4E14D7E9}</Property>
-				<Property Name="Bld_version.build" Type="Int">20</Property>
+				<Property Name="Bld_version.build" Type="Int">25</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">MPZ2006固态源工厂调试程序.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../exe/MPZ2006固态源工厂调试程序.exe</Property>
