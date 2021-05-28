@@ -39,6 +39,8 @@
 			<Item Name="保存功率控制表和标定参数表.vi" Type="VI" URL="../子vi/保存功率控制表和标定参数表.vi"/>
 			<Item Name="拷贝到预备区.vi" Type="VI" URL="../子vi/拷贝到预备区.vi"/>
 			<Item Name="功率电压图.vi" Type="VI" URL="../子vi/功率电压图.vi"/>
+			<Item Name="读文件解析.vi" Type="VI" URL="../子vi/读文件解析.vi"/>
+			<Item Name="log.vi" Type="VI" URL="../子vi/log.vi"/>
 		</Item>
 		<Item Name="MPZ2006固态源.vi" Type="VI" URL="../MPZ2006固态源.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
@@ -46,6 +48,7 @@
 				<Item Name="1D Array to String__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/1D Array to String__ogtk.vi"/>
 				<Item Name="Search or Split String__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/Search or Split String__ogtk.vi"/>
 				<Item Name="String to 1D Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/String to 1D Array__ogtk.vi"/>
+				<Item Name="End of Line Constant (bug fix).vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/End of Line Constant (bug fix).vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
@@ -156,7 +159,7 @@
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Serial - Settings.ctl" Type="VI" URL="/E/National Instruments/LabVIEW 2015/examples/Instrument IO/Serial/support/Serial - Settings.ctl"/>
+			<Item Name="Serial - Settings.ctl" Type="VI" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2015/examples/Instrument IO/Serial/support/Serial - Settings.ctl"/>
 			<Item Name="查询设备信息解析.vi" Type="VI" URL="../子vi/查询设备信息解析.vi"/>
 			<Item Name="当前路径选择.vi" Type="VI" URL="../子vi/当前路径选择.vi"/>
 			<Item Name="读内部参数.vi" Type="VI" URL="../子vi/读内部参数.vi"/>
@@ -260,11 +263,11 @@
 				<Property Name="Source[0].File[0].tag" Type="Str">{D552E360-EB17-4479-9673-B70DF9463B25}</Property>
 				<Property Name="Source[0].FileCount" Type="Int">1</Property>
 				<Property Name="Source[0].name" Type="Str">MPZ2006固态源工厂调试程序</Property>
-				<Property Name="Source[0].tag" Type="Ref">/我的电脑/程序生成规范/MPZ2006固态源工厂调试程序</Property>
+				<Property Name="Source[0].tag" Type="Ref">/我的电脑/程序生成规范/PAM Control Module For Debug</Property>
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
 				<Property Name="SourceCount" Type="Int">1</Property>
 			</Item>
-			<Item Name="MPZ2006固态源工厂调试程序" Type="EXE">
+			<Item Name="PAM Control Module For Debug" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{F2C6B6C0-DB33-4B4E-9835-28EB449A6345}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{FF5A3508-3199-4B97-94B7-6FC736993947}</Property>
@@ -272,7 +275,7 @@
 				<Property Name="App_winsec.description" Type="Str">http://www.ht808.com</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{F5CF8646-0CD3-4BA4-AF06-894613819311}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">MPZ2006固态源工厂调试程序</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">PAM Control Module For Debug</Property>
 				<Property Name="Bld_defaultLanguage" Type="Str">ChineseS</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
@@ -281,10 +284,10 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6B4512A0-B2E8-4858-A632-239F4E14D7E9}</Property>
-				<Property Name="Bld_version.build" Type="Int">20</Property>
+				<Property Name="Bld_version.build" Type="Int">28</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">MPZ2006固态源工厂调试程序.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../exe/MPZ2006固态源工厂调试程序.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">PAM Control Module For Debug.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../exe/PAM Control Module For Debug.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -292,7 +295,45 @@
 				<Property Name="Destination[1].path" Type="Path">../exe/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{8EB5EACA-D7FB-461A-A600-F101859B583C}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[0]" Type="Str">{6D9A5156-A5B5-45B1-8595-14994007E674}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[1]" Type="Str">{CFF381F2-997B-416F-AC92-0D6D58D2F904}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[10]" Type="Str">{1BE92C56-F5E8-4B9C-B82B-159A7D230978}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[11]" Type="Str">{F8DB74F3-C611-47EE-B0AA-BAF214A29EE6}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[12]" Type="Str">{CEC920F9-224D-4214-92B3-C1ABE1512543}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[13]" Type="Str">{2EFE7ED6-1B83-4888-855B-E56D0525B6E9}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[14]" Type="Str">{E476B3B6-5202-4BA5-A4C7-E9B1D8CEFCEC}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[15]" Type="Str">{DE5044D0-D202-42AE-9D3B-129556AE82F1}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[16]" Type="Str">{EBA5A9C6-EDF4-4EA1-A140-66F7322BAAD5}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[2]" Type="Str">{B9DB72A4-C521-4680-8C4A-B018784B2A09}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[3]" Type="Str">{278C1461-A9E0-47F2-9B11-C8B2D797408A}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[4]" Type="Str">{317E7B3E-325C-493B-8F67-281FF70C440D}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[5]" Type="Str">{9DAC3C21-5DC1-4387-9455-C43586FE5995}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[6]" Type="Str">{3EC748EE-061A-45B3-8A62-7FAAE8683B52}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[7]" Type="Str">{E3348725-C81F-4BED-85F6-AF85E3F28C99}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[8]" Type="Str">{548D5014-E520-48F8-BA65-6898A0848911}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[9]" Type="Str">{B03AA659-3362-428D-8842-FE316927F25F}</Property>
+				<Property Name="Exe_actXinfo_enumCLSIDsCount" Type="Int">17</Property>
+				<Property Name="Exe_actXinfo_majorVersion" Type="Int">5</Property>
+				<Property Name="Exe_actXinfo_minorVersion" Type="Int">5</Property>
+				<Property Name="Exe_actXinfo_objCLSID[0]" Type="Str">{59CD3AA6-EC3B-4EE4-8341-6512EFFB222C}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[1]" Type="Str">{2B8493BD-688D-428C-ACEF-06930786099F}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[10]" Type="Str">{CC40E548-B543-4262-A339-FB7FEB00C54B}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[11]" Type="Str">{37A71183-D955-4ED3-887C-D5BDC887599C}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[12]" Type="Str">{F90BC744-6EE8-40A6-9661-9F35E0AEFE38}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[13]" Type="Str">{F3E6B825-4A9B-45D0-BB94-DF5A769D8D2D}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[2]" Type="Str">{BC5E751B-8EDF-4D13-B612-640E74146D10}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[3]" Type="Str">{99916C65-2CE3-48F7-B479-9139A3711C51}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[4]" Type="Str">{0F58A914-3E1B-43E4-BD2E-474D5892836C}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[5]" Type="Str">{A8C24473-F3EB-4E67-A1A9-AD7B47F19BCF}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[6]" Type="Str">{4DE95AA7-E73D-4547-96F3-28F1163E66C0}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[7]" Type="Str">{40DECAFE-E068-4E4C-B63B-CE496AC71429}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[8]" Type="Str">{1A03F9F2-172C-4A00-BF34-4278FA74B42E}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[9]" Type="Str">{7FCAD473-DE56-417A-8537-56911F269A6D}</Property>
+				<Property Name="Exe_actXinfo_objCLSIDsCount" Type="Int">14</Property>
+				<Property Name="Exe_actXinfo_progIDPrefix" Type="Str">PAMControlModuleForDebug</Property>
+				<Property Name="Exe_actXServerName" Type="Str">PAMControlModuleForDebug</Property>
+				<Property Name="Exe_actXServerNameGUID" Type="Str"></Property>
+				<Property Name="Source[0].itemID" Type="Str">{FE69596C-286A-4BBF-951C-C9620CB67477}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/MPZ2006固态源.vi</Property>
@@ -303,12 +344,12 @@
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_companyName" Type="Str">ht808</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">MPZ2006固态源工厂调试程序</Property>
-				<Property Name="TgtF_internalName" Type="Str">MPZ2006固态源工厂调试程序</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">PAM Control Module For Debug</Property>
+				<Property Name="TgtF_internalName" Type="Str">PAM Control Module For Debug</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">版权 2020 ht808</Property>
-				<Property Name="TgtF_productName" Type="Str">MPZ2006固态源工厂调试程序</Property>
+				<Property Name="TgtF_productName" Type="Str">PAM Control Module For Debug</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{D552E360-EB17-4479-9673-B70DF9463B25}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">MPZ2006固态源工厂调试程序.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">PAM Control Module For Debug.exe</Property>
 			</Item>
 		</Item>
 	</Item>
