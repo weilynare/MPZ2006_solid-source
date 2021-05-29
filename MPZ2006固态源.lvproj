@@ -150,6 +150,7 @@
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
 				<Item Name="LVPoint32TypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPoint32TypeDef.ctl"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 			</Item>
 			<Item Name="Advapi32.dll" Type="Document" URL="Advapi32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -284,7 +285,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6B4512A0-B2E8-4858-A632-239F4E14D7E9}</Property>
-				<Property Name="Bld_version.build" Type="Int">20</Property>
+				<Property Name="Bld_version.build" Type="Int">23</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">PAM Control Module For Debug.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../exe/PAM Control Module For Debug.exe</Property>
@@ -295,6 +296,42 @@
 				<Property Name="Destination[1].path" Type="Path">../exe/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[0]" Type="Str">{C13C30EE-135C-425C-8FAF-7AEA319A9E83}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[1]" Type="Str">{76CC82B7-3C8A-4898-B3CE-FB4F4C13B52D}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[10]" Type="Str">{A83A92C9-7359-43C1-AA98-C2137D9C6538}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[11]" Type="Str">{1D30894C-175A-4600-BD2E-797F69227338}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[12]" Type="Str">{FF0F988B-568C-4C3E-8E56-AEECD19A6AAC}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[13]" Type="Str">{E50B773F-F612-4311-8C4F-42E28E0344B3}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[14]" Type="Str">{5092A7C2-1369-43D7-BC33-F6079241D9CC}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[15]" Type="Str">{1226FF51-28A0-4B0F-AEF4-79F57F47E8FB}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[16]" Type="Str">{FFD5026C-D547-47D1-B222-F1B82F224314}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[2]" Type="Str">{4118EA08-4694-462E-B648-660E6BC93495}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[3]" Type="Str">{DB8746B5-2E53-499E-8C43-93C3BD5C6F07}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[4]" Type="Str">{D619CD55-426B-4916-BCFB-1446226A6CDB}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[5]" Type="Str">{241AEF38-D572-4B7F-82FB-61CEFCF5979C}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[6]" Type="Str">{C1539AC0-9F74-40C8-B746-5BB7B9F5C030}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[7]" Type="Str">{DED711B5-12A2-4A52-BCE6-BD57E2C13DF6}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[8]" Type="Str">{749C9AB7-F363-47EA-A929-FFA34AA1C3C5}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[9]" Type="Str">{5A8FAA37-4C5C-4CF7-AA37-21808910B989}</Property>
+				<Property Name="Exe_actXinfo_enumCLSIDsCount" Type="Int">17</Property>
+				<Property Name="Exe_actXinfo_majorVersion" Type="Int">5</Property>
+				<Property Name="Exe_actXinfo_minorVersion" Type="Int">5</Property>
+				<Property Name="Exe_actXinfo_objCLSID[0]" Type="Str">{ED9E4082-B650-45A7-B26A-E51CBC61721D}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[1]" Type="Str">{CC44699B-F5B8-42BD-9AF8-F602F1255D93}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[10]" Type="Str">{8C84736F-B0B8-4ACF-B5E7-6DD9E17957AA}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[11]" Type="Str">{97EA10A1-B1E4-4742-AE47-5FA81D3278F5}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[12]" Type="Str">{26DB4DFA-91AD-4D9A-ACA3-31AC79DBF968}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[13]" Type="Str">{6514B2B0-6B47-4812-BEFB-E7503B165E6F}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[2]" Type="Str">{2D0F42EE-D446-47B7-BB9A-BA1D7B70EF94}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[3]" Type="Str">{470CDEDA-75ED-4F2E-909C-718110C35549}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[4]" Type="Str">{F12C2A42-BF4C-4835-9A97-DD36E2CF33DC}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[5]" Type="Str">{14AF6808-F06B-462A-BA42-4E59E034B3D9}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[6]" Type="Str">{FAFCE00B-E090-4DEB-9590-78E18B4EADA9}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[7]" Type="Str">{3A43E4F1-A827-4C29-BE3E-5FCF1501AB8E}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[8]" Type="Str">{16C75168-5A6C-41C5-9CE2-B0B91A2C085D}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[9]" Type="Str">{18DAB542-3803-48DE-9640-0D25AA2F03D6}</Property>
+				<Property Name="Exe_actXinfo_objCLSIDsCount" Type="Int">14</Property>
+				<Property Name="Exe_actXinfo_progIDPrefix" Type="Str">PAMControlModuleForDebug</Property>
 				<Property Name="Exe_actXServerName" Type="Str">PAMControlModuleForDebug</Property>
 				<Property Name="Exe_actXServerNameGUID" Type="Str"></Property>
 				<Property Name="Source[0].itemID" Type="Str">{F65A9C8A-2CBF-4E39-9081-1E7A9D3D03BC}</Property>
